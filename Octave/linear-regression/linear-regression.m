@@ -15,8 +15,8 @@ function [theta] = normalEquation(X, y)
   % theta = inv(A' * A) * A' * b     (inversion is the divide equivalent for matrices)
   %
   %
-  % With something simple like "A = [[1,5];[1,6]]" (which is SQUARE) and "b = [5;6]"
-  % you will can skip the A' and you will get "inv(A) * b" equals "[0;1]" the correct solution.
+  % With something simple like "A = [[1,5];[1,6]]" (which is SQUARE) and "b = [13;15]"
+  % you will can skip the A' and you will get "inv(A) * b" equals "[3;2]" the correct solution.
   %
   %
   % Long version: the solution for the perfect line does not exist in the input data points,
