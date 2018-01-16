@@ -18,6 +18,11 @@ for iter = 1:num_iters
     %
 
 
+    %theta = theta - (alpha/m) * (((X * theta) - y)' * X)';
+    theta = theta - (alpha/m) * (X' *((X * theta) - y));
+    % fprintf('theta %f %f \n', theta(1), theta(2));
+    
+    
     % ============================================================
 
     % Save the cost J in every iteration
