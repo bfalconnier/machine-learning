@@ -22,6 +22,15 @@ for iter = 1:num_iters
     theta = theta - (alpha/m) * (X' *((X * theta) - y));
     % fprintf('theta %f %f \n', theta(1), theta(2));
     
+    % guess using = (normalized input with '1's intercept column) * old hypothesis
+    %guess = X * theta
+    % error = guess - expected output
+    %error = guess - y
+    % delta = (normalized input with '1's intercept column) * error
+    %delta = X' * delta
+    % new hypothesis = old hypothesis - (learning rate / example count) * delta
+    %theta =  theta - (alpha/m) *  delta
+    
     
     % ============================================================
 

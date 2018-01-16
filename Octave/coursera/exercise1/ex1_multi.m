@@ -110,9 +110,9 @@ fprintf('\n');
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
 x = [1 1650 3]';
-
+% normalized input
 x_normal = (x - [0; mu']) ./ [1; sigma']
-
+% price estimate
 price = theta' * x_normal;
 
 

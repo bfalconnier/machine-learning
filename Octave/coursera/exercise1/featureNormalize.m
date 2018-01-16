@@ -32,7 +32,7 @@ mu = mean(X);
 sigma = std(X);
 X_norm = (X - mu) ./ sigma;
 
-
+% normalized data = (data column - (mean of data column)) / (standard deviation of data column)
 
 
 % ============================================================
